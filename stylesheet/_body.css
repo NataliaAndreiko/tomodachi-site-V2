@@ -1,0 +1,11 @@
+body {
+  font-family: "Comfortaa";
+  margin: 0;
+  background-image: url("/assets/img/background/background-manga.png"), url("/assets/img/background/background-spirited.png"), url("/assets/img/background/background-tomo.png");
+  background-size: contain, cover, contain;
+  background-position: left center, right center, right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*# sourceMappingURL=_body.css.map */

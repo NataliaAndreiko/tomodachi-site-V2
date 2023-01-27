@@ -1,0 +1,216 @@
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.779);
+  box-shadow: rgba(124, 178, 185, 0.102) 0px 54px 55px, rgba(124, 178, 185, 0.02) 0px -12px 30px, rgba(124, 178, 185, 0.02) 0px 4px 6px, rgba(124, 178, 185, 0.07) 0px 12px 13px, rgba(124, 178, 185, 0.01) 0px -3px 5px;
+}
+header .tomodachiLogo {
+  position: relative;
+  display: block;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  width: 6em;
+}
+header ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+header ul li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+header nav {
+  display: none;
+}
+header .container {
+  display: flex;
+  place-content: space-between;
+}
+header .mobile-menu {
+  cursor: pointer;
+}
+
+@media only screen and (max-device-width: 815px) {
+  header .tomodachiLogo {
+    width: 20em;
+  }
+  header .mobile-menu {
+    width: 7em;
+  }
+}
+@media only screen and (min-width: 815px) and (min-device-width: 815px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  header {
+    padding: 0em;
+    display: flex;
+    justify-content: space-around;
+  }
+  header nav {
+    display: flex;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+  }
+  header nav ul {
+    color: black;
+    top: 0.7em;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    position: relative;
+  }
+  header nav ul a {
+    color: black;
+    text-decoration: none;
+  }
+  header nav a:hover {
+    font-weight: bold;
+  }
+  header nav .current {
+    font-weight: bold;
+    color: #90BFD7;
+  }
+  header nav .log-in {
+    padding: 9px 10px;
+    border-radius: 21px;
+    box-shadow: rgb(144, 191, 215) 0 0px 15px 0;
+  }
+  header nav .log-in:hover {
+    font-weight: bolder;
+  }
+}
+body {
+  font-family: "Comfortaa";
+  margin: 0;
+  background-image: url("../assets/images/background/background-manga.png"), url("../assets/images/background/background-spirited.png"), url("../assets/images/background/background-tomo.png");
+  background-size: contain, cover, contain;
+  background-position: left center, right center, right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-size: contain;
+  }
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2em 3em;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em;
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.102) 0px 54px 55px, rgba(0, 0, 0, 0.02) 0px -12px 30px, rgba(0, 0, 0, 0.02) 0px 4px 6px, rgba(0, 0, 0, 0.07) 0px 12px 13px, rgba(0, 0, 0, 0.01) 0px -3px 5px;
+  border-radius: 25px;
+}
+main section a .ch-amount {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9215686275);
+  border-radius: 25px;
+  padding: 0.5em 1em;
+  float: right;
+  margin-left: 1em;
+  margin-top: 1em;
+  color: #90BFD7;
+  font-weight: bold;
+}
+main section a img {
+  border-radius: 25px;
+  width: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.102) 0px 54px 55px, rgba(0, 0, 0, 0.02) 0px -12px 30px, rgba(0, 0, 0, 0.02) 0px 4px 6px, rgba(0, 0, 0, 0.07) 0px 12px 13px, rgba(0, 0, 0, 0.01) 0px -3px 5px;
+}
+main section .some-info {
+  padding: 0 1em;
+}
+main section .some-info a {
+  text-decoration: none;
+}
+main section .some-info a h3 {
+  margin: 0;
+  color: black;
+}
+main section .some-info .genres {
+  word-wrap: break-word;
+  color: #90BFD7;
+  margin: 5px 0;
+  font-size: 14px;
+}
+main section .some-info .left-side {
+  display: flex;
+  justify-content: space-between;
+}
+main section .some-info .left-side p {
+  font-weight: bold;
+}
+
+.wrapped {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em;
+}
+aside .top-aside {
+  margin: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside .top-aside .donate {
+  background-color: #90BFD7;
+  border-radius: 25px;
+  color: black;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  box-shadow: rgba(0, 0, 0, 0.102) 0px 54px 55px, rgba(0, 0, 0, 0.02) 0px -12px 30px, rgba(0, 0, 0, 0.02) 0px 4px 6px, rgba(0, 0, 0, 0.07) 0px 12px 13px, rgba(0, 0, 0, 0.01) 0px -3px 5px;
+}
+aside .top-aside .last-updates {
+  min-width: 200px;
+  border-radius: 25px;
+  background-color: white;
+  padding: 0.5em 1em;
+  box-shadow: rgba(0, 0, 0, 0.102) 0px 54px 55px, rgba(0, 0, 0, 0.02) 0px -12px 30px, rgba(0, 0, 0, 0.02) 0px 4px 6px, rgba(0, 0, 0, 0.07) 0px 12px 13px, rgba(0, 0, 0, 0.01) 0px -3px 5px;
+  margin: 3em 0;
+  margin-bottom: 0;
+}
+aside .top-aside .last-updates .line {
+  padding: 0.1px;
+  background-color: #90BFD7;
+}
+aside .social {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+aside .social a img {
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.402) 0px 54px 55px, rgba(0, 0, 0, 0.02) 0px -12px 30px, rgba(0, 0, 0, 0.02) 0px 4px 6px, rgba(0, 0, 0, 0.07) 0px 12px 13px, rgba(0, 0, 0, 0.01) 0px -3px 5px;
+}
+
+@media only screen and (min-width: 815px) and (min-device-width: 815px) {
+  main {
+    margin: 2em 7em;
+  }
+}/*# sourceMappingURL=manga-list.css.map */

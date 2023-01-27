@@ -1,0 +1,87 @@
+header {
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.779);
+  box-shadow: rgba(124, 178, 185, 0.102) 0px 54px 55px, rgba(124, 178, 185, 0.02) 0px -12px 30px, rgba(124, 178, 185, 0.02) 0px 4px 6px, rgba(124, 178, 185, 0.07) 0px 12px 13px, rgba(124, 178, 185, 0.01) 0px -3px 5px;
+  display: flex;
+  place-content: space-between;
+  position: sticky;
+}
+header .tomodachiLogo {
+  position: relative;
+  display: block;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  width: 6em;
+}
+header ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+header ul li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+header nav {
+  display: none;
+}
+header .mobile-menu {
+  cursor: pointer;
+}
+
+@media only screen and (max-device-width: 815px) {
+  header .tomodachiLogo {
+    width: 20em;
+  }
+  header .mobile-menu {
+    width: 7em;
+  }
+}
+@media only screen and (min-width: 815px) and (min-device-width: 815px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    place-content: space-between;
+  }
+
+  header nav {
+    display: flex;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+  }
+  header nav ul {
+    color: black;
+    top: 0.7em;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    position: relative;
+  }
+  header nav ul a {
+    color: black;
+    text-decoration: none;
+  }
+  header nav a:hover {
+    font-weight: bold;
+  }
+  header nav .current {
+    font-weight: bold;
+    color: #90BFD7;
+  }
+  header nav .log-in {
+    padding: 9px 10px;
+    border-radius: 21px;
+    box-shadow: #90bfd7 0 0px 15px 0;
+  }
+  header nav .log-in:hover {
+    font-weight: bolder;
+  }
+}

@@ -1,0 +1,18 @@
+
+body {
+    font-family: "Comfortaa";
+    margin: 0;
+    background-image: url("../assets/images/background/background-manga.png"),
+    url("../assets/images/background/background-spirited.png"),
+    url("../assets/images/background/background-tomo.png");
+    background-size: contain, cover, contain;
+    background-position: left center, right center, right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-size: contain;
+    }
+}
